@@ -1,2 +1,2 @@
 # sql
-SQL Practice
+This code repository is for my SQL Practice
