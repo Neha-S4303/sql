@@ -1,3 +1,5 @@
+This is an example of a correlated subquery used to filter rows by an aggregate (MAX).
+
 # Using the table playground.revenue, write a SQL query to select rows from a given table that have the maximum revenue value for each id.
  The resultant table should have three columns - "id", "rev", "content". 
  Additionally, the results should be ordered in descending order by revenue.
