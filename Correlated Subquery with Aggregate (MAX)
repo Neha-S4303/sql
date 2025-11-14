@@ -1,0 +1,11 @@
+# Using the table playground.revenue, write a SQL query to select rows from a given table that have the maximum revenue value for each id.
+ The resultant table should have three columns - "id", "rev", "content". 
+ Additionally, the results should be ordered in descending order by revenue.
+
+
+SELECT id, rev, content
+  FROM playground.revenue r1
+  WHERE rev = (SELECT max(rev)
+  FROM playground.revenue r2
+  WHERE r1.id=r2.id)
+  ORDER BY rev desc
